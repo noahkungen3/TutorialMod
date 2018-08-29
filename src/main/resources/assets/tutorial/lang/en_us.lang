@@ -1,3 +1,7 @@
 # Items
 item.ingot_copper.name=Copper Ingot
 item.ingot_aluminum.name=Aluminum Ingot
+item.ingot_lead.name=Lead Ingot
+item.ingot_zinc.name=Zinc Ingot
+item.ingot_titanium.name=Titanium Ingot
+item.ingot_plastic.name=Plastic Sheets
