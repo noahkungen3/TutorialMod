@@ -6,19 +6,31 @@ import net.minecraftforge.registries.IForgeRegistry;
 
 public class ModItems {
 	
+	public static ItemBase ingotPlastic = new ItemBase("ingot_plastic").setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemBase ingotTitanium = new ItemBase("ingot_titanium").setCreativeTab(CreativeTabs.MATERIALS);
+        public static ItemBase ingotZinc = new ItemBase("ingot_zinc").setCreativeTab(CreativeTabs.MATERIALS);
+	public static ItemBase ingotLead = new ItemBase("ingot_lead").setCreativeTab(CreativeTabs.MATERIALS);
 	public static ItemBase ingotAluminum = new ItemBase("ingot_aluminum").setCreativeTab(CreativeTabs.MATERIALS);
 	public static ItemBase ingotCopper = new ItemBase("ingot_copper").setCreativeTab(CreativeTabs.MATERIALS);
 
 	public static void register(IForgeRegistry<Item> registry) {
 		registry.registerAll(
 				ingotCopper,
-				ingotAluminum
+				ingotAluminum,
+				ingotLead,
+				ingotZinc,
+				ingotTitanium,
+				ingotPlastic
 		);
 	}
 	
 	public static void registerModels() {
 		ingotCopper.registerItemModel();
 		ingotAluminum.registerItemModel();
-	}
+		ingotLead.registerItemModel();
+		ingotZinc.registerItemModel();
+		ingotTitanium.registerItemModel();
+		ingotPlastic.registerItemModel();
+		}
 
 }
